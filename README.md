@@ -1,18 +1,39 @@
 # Evaluate climate change using ArcGIS API for Python and ArcGIS Maps SDK for JavaScript
 
+## Use and install this repository
+
+HTTPS
+```CSS
+https://github.com/CarlosMendez1997Col/Evaluate-climate-change-using-ArcGIS-API-for-Python-and-ArcGIS-Maps-SDK-for-JavaScript.git
+```
+
+GitHub CLI
+```CSS
+gh repo clone CarlosMendez1997Col/Evaluate-climate-change-using-ArcGIS-API-for-Python-and-ArcGIS-Maps-SDK-for-JavaScript
+```
+
 ## Description
 
-Evaluation of `Climate Change Projections ` of the Global Climate Models (GCM) CCCma-CanESM2, MOHC-HadGEM2-ES and MIROC-MIROC5, using Arcgis for Python and ArcGIS Maps SDK for JavaScript.
+Repository builded in `Arcgis for Python` and `ArcGIS Maps SDK for JavaScript`.
 
 Each chapter is described below:
 
-1. The first chapter, shows how to Geoprocess NetCDF files and convert them to CRF (Cloud Raster Format).
-
-2. The second section, explain how to analyze trends/patterns in multidimensional data. Also, calculate results using the following tools: Generate Multidimensional Anomaly, Generate Trend Raster and Predict Using Trend Raster.
-
-3. The third section, shows how to create animations and timelines of climate data using the `19 Bioclimate Projections of WorldClim` using ArcGIS Maps SDK for JavaScript. 
-
-4. The fourth and final section shows how to convert and export multidimensional data to tables and shapefile formats.
+1. The first chapter, geoprocessing `NetCDF` files and convert them to `CRF` (Cloud Raster Format).
+```HTML
+https://github.com/CarlosMendez1997Col/Evaluate-climate-change-using-ArcGIS-API-for-Python-and-ArcGIS-Maps-SDK-for-JavaScript/tree/main/1.%20Geoprocessing%20NetCDF%20data
+``` 
+2. The second chapter, analyze trends/patterns and calculate `Multidimensional Anomaly`, `Trend Raster` and `Predict Using Trend Raster`.
+```HTML
+https://github.com/CarlosMendez1997Col/Evaluate-climate-change-using-ArcGIS-API-for-Python-and-ArcGIS-Maps-SDK-for-JavaScript/tree/main/2.%20Analysis%20of%20trends%20and%20patterns%20using%20multidimensional%20data
+```
+3. The third chapter, shows some animations and timelines of `19 Bioclimate Projections of WorldClim` using `ArcGIS Maps SDK for JavaScript`. 
+```HTML
+https://github.com/CarlosMendez1997Col/Evaluate-climate-change-using-ArcGIS-API-for-Python-and-ArcGIS-Maps-SDK-for-JavaScript/tree/main/3.%20Animations%20and%20timeline%20of%20climate%20projections
+```
+4. The fourth chapter, share the links of original NetCDF files.
+```HTML
+https://github.com/CarlosMendez1997Col/Evaluate-climate-change-using-ArcGIS-API-for-Python-and-ArcGIS-Maps-SDK-for-JavaScript/tree/main/4.%20Data%20and%20files
+```
 
 ## Prerequisites and libraries
 
@@ -61,7 +82,13 @@ from arcgis.raster.analytics import *
             Slider,TimeSlider, Legend, esriRequest, Color,LayerList, Expand, TileLayer, BaseTileLayer,Basemap) =>  
 <script>
 ```
+## Versions and releases
 
+Version `1.0`
+
+```HTML
+https://github.com/CarlosMendez1997Col/Evaluate-hydrological-and-meteorological-droughts-using-C-and-R/commits/Version1.0
+```
 
 ## Data acquisition and download
 
@@ -88,52 +115,40 @@ The data used in this program come from the Coordinated Regional Downscaling Exp
 | Datanode                | esg-dn1.nsc.liu.se                                          | esg-dn1.nsc.liu.se                                          |
 
 CCMa-CanESM2 Model
-The second generation Canadian Earth System Model (CanESM2) (CanESM2) is the fourth generation coupled global climate model developed by the Canadian Centre for Climate Modelling and Analysis (CCCma) of Environment and Climate Change Canada. CanESM2 represents the Canadian contribution to the IPCC Fifth Assessment Report (AR5).
-
 [Model CCCma-CanESM2 information](https://climate-modelling.canada.ca/climatemodeldata/cgcm4/CanESM2/index.shtml)
 
 MOHC-HadGEM2-ES Model
-
-The HadGEM2 family includes a coupled atmosphere-ocean configuration, with or without a vertical extension in the atmosphere to include a well-resolved stratosphere, and an Earth-System configuration which includes dynamic vegetation, ocean biology and atmospheric chemistry.
-
 [Model MOHC-HadGEM2-ES information](https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/climate-models/hadgem2)
 
 MIROC-MIROC5 Model 
-
-Model for Interdisciplinary Research On Climate
-
 [Model MIROC-MIROC5 information](https://catalogue.ceda.ac.uk/uuid/d90ca0077e3344c7840ca56e49f89ee7/?jump=related-docs-anchor)
-
-## Projection and scenario RCP45 of precipitation 2021-2030 SAM  
-
-[Data of CCma-CanESM2 precipitation](http://esg-dn1.nsc.liu.se/thredds/fileServer/esg_dataroot3/cordexdata/cordex/output/SAM-20/INPE/CCCma-CanESM2/rcp45/r1i1p1/INPE-Eta/v1/mon/pr/v20180507/pr_SAM-20_CCCma-CanESM2_rcp45_r1i1p1_INPE-Eta_v1_mon_202101-203012.nc)
-
-[Data of MOHC-HadGEM2-ES precipitation](http://esg-dn1.nsc.liu.se/thredds/fileServer/esg_dataroot3/cordexdata/cordex/output/SAM-20/INPE/MOHC-HadGEM2-ES/rcp45/r1i1p1/INPE-Eta/v1/mon/pr/v20180507/pr_SAM-20_MOHC-HadGEM2-ES_rcp45_r1i1p1_INPE-Eta_v1_mon_202101-203012.nc)
-
-[Data of MIROC-MIROC5 precipitation](http://esg-dn1.nsc.liu.se/thredds/fileServer/esg_dataroot3/cordexdata/cordex/output/SAM-20/INPE/MIROC-MIROC5/rcp45/r1i1p1/INPE-Eta/v1/mon/pr/v20180507/pr_SAM-20_MIROC-MIROC5_rcp45_r1i1p1_INPE-Eta_v1_mon_202101-203012.nc)
-
-## Projection and scenario RCP45 of Near Surface Air Temperature 2021-2030 SAM 
-
-[Data of CCma-CanESM2 temperature](http://esg-dn1.nsc.liu.se/thredds/fileServer/esg_dataroot3/cordexdata/cordex/output/SAM-20/INPE/CCCma-CanESM2/rcp45/r1i1p1/INPE-Eta/v1/mon/tas/v20180507/tas_SAM-20_CCCma-CanESM2_rcp45_r1i1p1_INPE-Eta_v1_mon_202101-203012.nc)
-
-[Data of MOHC-HadGEM2-ES temperature](http://esg-dn1.nsc.liu.se/thredds/fileServer/esg_dataroot3/cordexdata/cordex/output/SAM-20/INPE/MOHC-HadGEM2-ES/rcp45/r1i1p1/INPE-Eta/v1/mon/tas/v20180507/tas_SAM-20_MOHC-HadGEM2-ES_rcp45_r1i1p1_INPE-Eta_v1_mon_202101-203012.nc)
-
-[Data of MIROC-MIROC5 temperature](http://esg-dn1.nsc.liu.se/thredds/fileServer/esg_dataroot3/cordexdata/cordex/output/SAM-20/INPE/MIROC-MIROC5/rcp45/r1i1p1/INPE-Eta/v1/mon/tas/v20180507/tas_SAM-20_MIROC-MIROC5_rcp45_r1i1p1_INPE-Eta_v1_mon_202101-203012.nc)
 
 ## Credits and more information
 
-[The Intergovernmental Panel on Climate Change](https://www.ipcc.ch/)
-[World Climate Research Programme (WCRP)](https://www.wcrp-climate.org/)
-[The Coordinated Regional Downscaling Experiment (CORDEX)](https://cordex.org/)
-[The Earth System Grid Federation (ESGF)](https://esgf.llnl.gov/)
+* [The Intergovernmental Panel on Climate Change](https://www.ipcc.ch/)
+
+* [World Climate Research Programme (WCRP)](https://www.wcrp-climate.org/)
+
+* [The Coordinated Regional Downscaling Experiment (CORDEX)](https://cordex.org/)
+
+* [The Earth System Grid Federation (ESGF)](https://esgf.llnl.gov/)
 
 ## Conflict of Interest.
 
-The authors declare that there is no conflict of interest in the publication of this map and that all authors have approved it for publication.
+The author declare that there is no conflict of interest in the publication of this data and have approved it for publication.
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
+Please make sure to update tests as appropriate. 
+
+## MIT License
+
+Copyright (c) 2025 Carlos Mendez
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
